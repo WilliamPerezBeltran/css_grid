@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .d1 {
+        background: LightSkyBlue;
+      }
+      .d2 {
+        background: LightSalmon;
+      }
+      .d3 {
+        background: PaleTurquoise;
+      }
+      .d4 {
+        background: LightPink;
+        grid-row: 1 / 2; /* desde la linea 1 hasta la linea 2 de las filas  */
+      }
+      .d5 {
+        background: PaleGreen;
+        grid-column: 2 / 4;
+        /*justify-self:start|center|end;*/
+        justify-self: start; /* horizontal*/
+        align-self: center; /* vertical*/
+      }
+
+      .container {
+        display: grid;
+        font-size: 40px;
+        width: 100%;
+        background: LightGray;
+        /* Only change code below this line */
+        grid-template-columns: 1fr 100px 2fr;
+        /*grid-template-rows:auto 50px;*/
+        grid-template-rows: 100px 250px;
+        /*grid-column-gap: 20px;*/
+        /*grid-row-gap: 20px;*/
+        grid-gap: 20px 10px;
+        justify-items: center; /* lo hace horizontalmente en la cuadricula*/
+        align-items: center; /* lo hace verticalmente en la cuadricula*/
+
+        /* Only change code above this line */
+      }
+    </style>
+    <div class="container">
+      <div class="d1">1</div>
+      <div class="d2">2</div>
+      <div class="d3">3</div>
+      <div class="d4">4</div>
+      <div class="d5">5</div>
+    </div>
+  </body>
+</html>

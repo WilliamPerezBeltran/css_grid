@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .item1 {
+        background: LightSkyBlue;
+        grid-area: header;
+      }
+      .item2 {
+        background: LightSalmon;
+        grid-area: advert;
+        /*visibility: hidden;*/
+        /*display: none;*/
+      }
+      .item3 {
+        background: PaleTurquoise;
+        grid-area: content;
+      }
+      .item4 {
+        background: LightPink;
+        grid-area: footer;
+      }
+     
+
+      .container {
+        font-size: 40px;
+        min-height: 300px;
+        width: 100%;
+        background: LightGray;
+        display: grid;
+        /*grid-template-columns: 1fr 1fr 1fr;*/
+        grid-template-columns: repeat(2,1fr) 1fr;
+        /*grid-template-columns: repeat(,1fr) 20px;*/
+        /*grid-template-rows: 1fr 1fr 1fr;*/
+        /*grid-template-rows: repeat(3,1fr) 20px;*/
+        grid-template-rows: repeat(2,1fr) 1fr;
+        grid-gap: 10px;
+        grid-template-areas:
+    /* Only change code below this line */
+          "header header header"
+          "advert content content"
+          "advert footer footer";
+        /* Only change code above this line */
+      }
+    </style>
+
+    <div class="container">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+      <div class="item4">4</div>
+    </div>
+  </body>
+</html>
